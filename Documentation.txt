@@ -1,0 +1,107 @@
+                   			*************DOCUMENTATION FOR USING THE FUNCTIONS IN DsAlgolib HEADER FILE*****************
+
+
+
+#  Use "namespace DsAlgo" , So that we can use all the things with DsAlgo namespace.
+
+
+
+
+#  LINKED LIST USAGE:
+
+	* Initialize linkedlist by "linked_list<data Type> variable".
+	* variable.append_at_end(data) ---> used for appending data at end of the linked list.
+	* variable.append_at_begin(data) ---> used for appending data at begining of the list.
+	* variable.append_at_n_pos(data,position) ---> used for appending data at the nth position of the list.
+	* variable.delete_node(data) ---> used to delete the node consisting the data in the list.
+	* variable.print_all_nodes() ---> used to print all nodes which are present in the list.
+	* variable.reverse_linked_list() ---> used to reverse the linked list.
+	* variable.sort() ---> used to sort the list in increasing order.
+
+
+
+
+#   STACK USAGE:
+
+	* Initialize stack by "Stack<data Type> variable".
+	* variable.push(data) ---> used for inserting data into stack.
+	* variable.pop() ---> used to pop out the top most element from stack.
+	* variable.peek() ---> used to retrive the top most element of stack without poping out of stack.
+	* variable.print_stack() ---> used to print the stack in LIFO(Last Input First Output) order.
+	    [NOTE]: After the use of print_stack() method all the data in the stack will be removed because of internal pop function. So if you want to print the whole
+	            stack use only once.
+	* variable.sortstack(order) ---> used to sort the stack in ascending or descending order. We can choose the order by keeping "ascending" or "descending" strings in place of order.
+	* variable.isempty() ---> used to check whether the stack is empty or not.
+
+
+
+
+#   QUEUE USAGE:
+
+	* Initialize queue by "Queue<data Type> variable".
+	* variable.push(data) ---> used for inserting data into queue.
+	* variable.pop() ---> used to pop out the bottom most element(first element which is inserted is the bottom most element) from queue.
+	* variable.peek() ---> used to retrive the bottom most element of queue without poping out of queue.
+	* variable.print_queue() ---> used to print queue in FIFO(First Input First Output) order.
+		[NOTE]: After the use of print_queue() method all the data in the queue will be removed because of internal pop function. So if you want to print the whole
+	            queue use only once.
+	* variable.sortqueue(order) ---> used to sort the queue in ascending or descending order. We can choose the order by keeping "ascending" or "descending" strings in place of order.
+	* variable.isempty() ---> used to check whether the queue is empty or not.
+
+
+
+	
+#   BINARY SEARCH TREE USAGE:
+	
+	* Initialize Binary search tree by "BSTree<data Type> variable".
+	* variable.insert(data) ---> used for inserting data into a binary search tree.
+	* variable.search(data) ---> used to search the given data in the tree.
+	* variable.findMin() ---> used to find the minimum value in the tree.
+	* variable.findMax() ---> used to find the maximum value in the tree.
+	* variable.height() ---> used to find the maximum depth of the tree.
+	* variable.maxnodes() ---> used to find maximum number of nodes that are connected from root node to leaf node.
+	* variable.bfs() ---> used for printing tree in level order traversal using breadth first search.
+	* variable.preorder() ---> used for printing tree in preorder traversal (root node-> left side nodes-> right side nodes).
+	* variable.inorder() ---> used for printing tree in inorder traversal (left side nodes->root node->right side nodes).
+	* variable.postorder() ---> used for printing tree in postorder traversal (left side nodes->right side nodes->root node).
+	* variable.isBSTree() ---> used for checking if the given input is a binary tree or not.
+	* variable.GetSuccesor(data) ---> used to get the next larger value of the given data from the tree.
+	* variable.delete_node(data) ---> used to delete the gien data node from the tree.
+	* variable.invert_BSTree() ---> used for inverting the binary tree(mirror image).
+
+
+
+
+
+#   GRAPH USAGE:
+
+	* Initialize Graph by "Graph variable(total no. of nodes)".
+	* variable.addedge(node1,node2) ---> this addedge used for creating directed edges between nodes.
+	* variable.add_edge(node1,node2) ---> this add_edge used for creating undirected edges between nodes.
+	* variable.DFS() ---> used for printing nodes using depth first search.
+	* variable.BFS() ---> used for printing nodes using breadth first search.
+
+
+
+
+#   HASH TABLE USAGE:
+[NOTE]: To use this data structure your c++ compiler should be c++11 minimum.
+
+	* Initialize HashTable by "HashTable<data Type> variable".
+	* variable.insertItem(key,value) ---> used to insert key and value into hash table.
+	* variable.removeItem(key) ---> used to remove the certain key present in hash table.
+	* variable.printTable() ---> used to print the table.
+	* variable.isempty() ---> used to check if the hash table is empty or not.
+
+
+
+#   ALGORITHMS:
+	
+	* big_power(long int,long int) ---> used to check power of very large values which is not possible with pow() pre-defined function in c++.
+	* mul_big_nums(string , string) ---> used to multiply very large numbers.
+	* str_to_int(string) ---> used to convert string to integer.
+	* mod_inverse(int a,int m) ---> used to find modular inverse of integer "a" of "m". (a*x%m=1 here we find x).
+	* gcd(int a,int b) ---> used to find greatest common divisor of "a" and "b".
+
+
+     ************************************* FOR MORE UNDERSTANDING CHECK OUT APPLICATION.CPP , REMOVE COMMENTS & COMPILE IT SEE RESULTS*****************************************
